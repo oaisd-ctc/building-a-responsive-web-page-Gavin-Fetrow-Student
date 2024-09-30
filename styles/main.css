@@ -1,0 +1,61 @@
+body {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.navi {
+    display: flex;
+    background-color: rgb(25, 165, 25);
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.navi>div {
+    padding: 6px;
+    font-size: 20px;
+}
+
+.projects {
+    display: flex;
+    background-color: #2c2c2c;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projects>div {
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%
+}
+
+@media only screen and (max-width: 500px) {
+    .projects>div {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .navi {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .projects>div {
+        background-color: rgb(255, 15, 15);
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .projects>div {
+        background-color: purple;
+        color: white;
+    }
+}
